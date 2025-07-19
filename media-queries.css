@@ -1,0 +1,10 @@
+/* Media queries for responsive design */
+
+@media (max-width: 576px) {
+
+    .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+}
+    
+}
