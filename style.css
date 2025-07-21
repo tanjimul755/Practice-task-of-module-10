@@ -7,7 +7,9 @@
   list-style: none;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  /* border: 1px solid black; */
 }
+
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -44,7 +46,6 @@
 
 .hamburger-menu {
   display: none;
-  border: 1px solid #e5e5e5;
   padding: 0px 12px;
 }
 
@@ -57,7 +58,8 @@
 .nav-links ul li a:hover {
   color: rgba(224, 44, 109, 1);
 }
-.nav-links a i {
+
+.nav-icons {
   color: rgba(0, 0, 0, 1);
   font-size: 1.25rem;
 }
@@ -65,6 +67,14 @@
 .nav-links a i:hover {
   color: rgba(224, 44, 109, 1);
 }
+
+/* Styling for Responsive navbar  */
+
+.responsive-navbar {
+  display: none;
+}
+
+
 /* styling for the hero section */
 
 .btn-primary {
@@ -76,9 +86,11 @@
   font-size: 1rem;
   transition: background-color 0.3s ease;
 }
+
 .btn-primary i {
   transition: transform 0.3s ease-in-out;
 }
+
 .btn-primary:hover i {
   animation: slideArrow 2s ease infinite;
 }
@@ -87,9 +99,11 @@
   0% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(6px);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -119,24 +133,23 @@
 }
 
 .hero-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hero-text {
-  width: 36.375rem;
+  padding-right: 8.313rem;
 }
 
 .hero-text h1 {
-  font-size: clamp(3.5rem, 5vw, 3rem);
-  font-weight: 700;
-  color: rgba(58, 58, 58, 1);
-  width: 12em;
+    font-size: clamp(1rem, 4vw, 3.25rem);
+    font-weight: 700;
+    color: rgba(58, 58, 58, 1);
 }
 
 .hero-text p {
-  font-size: 1.25rem;
+  font-size: clamp(0.875rem, 2vw, 1rem);
   color: rgba(58, 58, 58, 0.8);
   padding: 0.5rem 0 2rem 0;
 }
@@ -160,13 +173,18 @@
   border-top: 2px solid;
   border-bottom: 2px solid;
   border-image: linear-gradient(to right, rgba(192, 204, 218, 0.1), rgba(192, 204, 218, 0.6), rgba(192, 204, 218, 0.1)) 1;
-  padding: 2rem 0;
+  padding: 2rem 42px;
   margin: 70px 0;
 }
 
 .sponsore-logos {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
+.sponsore-logos img {
+  width: clamp(16px, 14vw, 92px);
+}
