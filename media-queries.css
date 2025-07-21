@@ -3,31 +3,41 @@
 @media (max-width: 1440px) {
     .navbar {
         padding: 2.5rem 6rem;
-        
+
     }
 
     .hero-section {
         padding: clamp(0px, 0vw, 0px) clamp(0px, 6vw, 44px);
     }
 
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 @media (max-width: 992px) {
-        .nav-links {
-            display: none;
-        }
+    .nav-links {
+        display: none;
+    }
 
-        .hamburger-menu {
-            display: inline;
-        }
+    .hamburger-menu {
+        display: inline;
+    }
 
-        .responsive-navbar {
-            display: inline;
-        }
+    .responsive-navbar {
+        display: inline;
+    }
 
-        .hero-text {
-            padding: 14px 4vw 0 0;
-        }
+    .hero-text {
+        padding: 14px 4vw 0 0;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 }
 
@@ -42,11 +52,8 @@
     }
 
     .hero-text h1 {
-    font-size: clamp(1rem, 8vw, 3.25rem);
-}
+        font-size: clamp(1rem, 8vw, 3.25rem);
+    }
 
 
 }
-
-
-
